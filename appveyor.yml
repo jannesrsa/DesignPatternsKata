@@ -27,10 +27,11 @@ build:
  verbosity: minimal
 
 test_script:
+- >- 
 - >-
     OpenCover.Console.exe
     -target:"vstest.console.exe"
-    -targetargs:"DesignPatternsKataTests.sln"
+    -targetargs:""C:\projects\designpatternskata\src\DesignPatternsKataTests\bin\Release\DesignPatternsKataTests.dll" /InIsolation /logger:Appveyor"
     -filter:"+[*]* -[*.Tests]*"
     -output:"%APPVEYOR_BUILD_FOLDER%\coverage.xml"
     -excludebyattribute:*.ExcludeFromCodeCoverage*
