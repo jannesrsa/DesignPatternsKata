@@ -62,14 +62,16 @@
     <Compile Include="Memento\Customer.cs" />
     <Compile Include="Memento\MementoForCustomerEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategy\Wikipedia\ICalculate.cs" />
+    <Compile Include="Strategy\Wikipedia\Minus.cs" />
+    <Compile Include="Strategy\Wikipedia\Plus.cs" />
+    <Compile Include="Strategy\Wikipedia\CalculateClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Strategy\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
