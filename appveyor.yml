@@ -30,6 +30,7 @@ test_script:
 - >- 
 - >-
     OpenCover.Console.exe
+    -register:user
     -target:"vstest.console.exe"
     -targetargs:""C:\projects\DesignPatternsKataTests.dll" /InIsolation /logger:Appveyor"
     -filter:"+[*]* -[*.Tests]*"
