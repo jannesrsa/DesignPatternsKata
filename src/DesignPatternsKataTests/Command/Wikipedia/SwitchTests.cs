@@ -11,11 +11,9 @@ namespace DesignPatternsKata.Command.Wikipedia.Tests
         {
             // Arrange
             var light = new Light();
-            var openCommand = new OpenSwitchCommand(light);
-            var closeCommand = new CloseSwitchCommand(light);
 
             // Action
-            var lightSwitch = new Switch(openCommand, closeCommand);
+            var lightSwitch = HelperMethods.CreateSwitch(light);
 
             // Assert
             Assert.IsNotNull(lightSwitch);
@@ -27,9 +25,7 @@ namespace DesignPatternsKata.Command.Wikipedia.Tests
         {
             // Arrange
             var light = new Light();
-            var openCommand = new OpenSwitchCommand(light);
-            var closeCommand = new CloseSwitchCommand(light);
-            var lightSwitch = new Switch(openCommand, closeCommand);
+            var lightSwitch = HelperMethods.CreateSwitch(light);
 
             // Action
             lightSwitch.Open();
@@ -44,9 +40,7 @@ namespace DesignPatternsKata.Command.Wikipedia.Tests
         {
             // Arrange
             var light = new Light();
-            var openCommand = new OpenSwitchCommand(light);
-            var closeCommand = new CloseSwitchCommand(light);
-            var lightSwitch = new Switch(openCommand, closeCommand);
+            var lightSwitch = HelperMethods.CreateSwitch(light);
 
             // Action
             lightSwitch.Close();

@@ -56,8 +56,10 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="Command\CommandUnitTests.cs" />
-    <Compile Include="Command\SwitchTests.cs" />
+    <Compile Include="Command\Channel9\CommandUnitTests.cs" />
+    <Compile Include="Command\Wikipedia\HelperMethods.cs" />
+    <Compile Include="Command\Wikipedia\SwitchTests.cs" />
+    <Compile Include="Command\Wikipedia\EngineTests.cs" />
     <Compile Include="Memento\MementoUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

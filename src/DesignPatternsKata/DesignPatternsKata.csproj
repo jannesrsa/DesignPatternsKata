@@ -49,6 +49,7 @@
     <Compile Include="Command\Channel9\AddNumbersCommand.cs" />
     <Compile Include="Command\Channel9\AddTextCommand.cs" />
     <Compile Include="Command\Channel9\BaseCommand.cs" />
+    <Compile Include="Command\Wikipedia\Engine.cs" />
     <Compile Include="Command\Wikipedia\OpenSwitchCommand.cs" />
     <Compile Include="Command\Wikipedia\Light.cs" />
     <Compile Include="Command\Wikipedia\Switch.cs" />
