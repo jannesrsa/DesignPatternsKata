@@ -8,7 +8,7 @@ init:
 
 assembly_info:
   patch: true
-  file: 'src\Properties\AssemblyInfo.*'
+  file: 'src\DesignPatternsKata\Properties\AssemblyInfo.*'
   assembly_version: '{version}'
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
@@ -27,7 +27,7 @@ build:
  verbosity: minimal
 
 test_script:
-- >- 
+- ps: >- 
     foreach($file in Get-ChildItem –Path C:\projects -Include *.pdb -Recurse)
     {
         Echo $file.FullName
@@ -37,7 +37,7 @@ test_script:
     OpenCover.Console.exe
     -register:user
     -target:"vstest.console.exe"
-    -targetargs:""C:\projects\designpatternskata\src\DesignPatternsKataTests\bin\Release\DesignPatternsKataTests.dll" /InIsolation /logger:Appveyor"
+    -targetargs:""%APPVEYOR_BUILD_FOLDER%\designpatternskata\src\DesignPatternsKataTests\bin\Release\DesignPatternsKataTests.dll" /InIsolation /logger:Appveyor"
     -filter:"+[*]* -[*.Tests]*"
     -output:"%APPVEYOR_BUILD_FOLDER%\coverage.xml"
     -excludebyattribute:*.ExcludeFromCodeCoverage*
