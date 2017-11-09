@@ -51,6 +51,9 @@
     <Compile Include="Command\BaseCommand.cs" />
     <Compile Include="Command\Controller.cs" />
     <Compile Include="Command\IAppCommand.cs" />
+    <Compile Include="Memento\ChangeCustomerCommand.cs" />
+    <Compile Include="Memento\Customer.cs" />
+    <Compile Include="Memento\MementoForCustomerEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -57,6 +57,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Command\CommandUnitTests.cs" />
+    <Compile Include="Memento\MementoUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
