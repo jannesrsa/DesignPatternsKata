@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternsKata", "DesignPatternsKata.csproj", "{2667EF84-BC97-4E45-8CE4-C1228C406005}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternsKataTests", "DesignPatternsKataTests\DesignPatternsKataTests.csproj", "{D93684DA-2B21-420E-BCBE-09FB43F82860}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{58F5FDBF-31B4-4416-9CF9-E3BA890CD17A}"
 	ProjectSection(SolutionItems) = preProject
-		..\appveyor.yml = ..\appveyor.yml
-		..\README.md = ..\README.md
+		appveyor.yml = appveyor.yml
+		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternsKata", "src\DesignPatternsKata.csproj", "{2667EF84-BC97-4E45-8CE4-C1228C406005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternsKataTests", "src\DesignPatternsKataTests\DesignPatternsKataTests.csproj", "{D93684DA-2B21-420E-BCBE-09FB43F82860}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

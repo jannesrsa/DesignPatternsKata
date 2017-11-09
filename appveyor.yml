@@ -23,5 +23,5 @@ before_build:
 - nuget restore -verbosity quiet
 
 build:
- project: src\DesignPatternsKata.sln
+ project: DesignPatternsKata.sln
  verbosity: minimal
