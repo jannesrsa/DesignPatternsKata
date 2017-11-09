@@ -15,5 +15,41 @@ namespace DesignPatternsKata.Command.Tests
             controller.GetCommandAt(addCommandReference).Execute(expected);
             Assert.AreEqual(expected, controller.GetBuiltString());
         }
+
+        [TestMethod]
+        public void ShouldUndoNumbersAsText()
+        {
+            var controller = new Controller();
+            var addCommandReference = controller.AddCommand(new AddNumbersCommand());
+            var expected = "1234";
+            controller.GetCommandAt(addCommandReference).Execute(expected);
+            controller.GetCommandAt(addCommandReference).Execute("5678");
+            controller.GetCommandAt(addCommandReference).UnExecute();
+            Assert.AreEqual(expected, controller.GetBuiltString());
+        }
+
+        [TestMethod]
+        public void ShouldAddText()
+        {
+            var controller = new Controller();
+            var addCommandReference = controller.AddCommand(new AddTextCommand());
+            var text1 = "abc";
+            controller.GetCommandAt(addCommandReference).Execute(text1);
+            var text2 = "def";
+            controller.GetCommandAt(addCommandReference).Execute(text2);
+            Assert.AreEqual($"{text1}{text2}", controller.GetBuiltString());
+        }
+
+        [TestMethod]
+        public void ShouldUndoText()
+        {
+            var controller = new Controller();
+            var addCommandReference = controller.AddCommand(new AddTextCommand());
+            var expected = "abc";
+            controller.GetCommandAt(addCommandReference).Execute(expected);
+            controller.GetCommandAt(addCommandReference).Execute("def");
+            controller.GetCommandAt(addCommandReference).UnExecute();
+            Assert.AreEqual(expected, controller.GetBuiltString());
+        }
     }
 }
