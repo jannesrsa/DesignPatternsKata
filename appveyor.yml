@@ -25,3 +25,6 @@ before_build:
 build:
  project: DesignPatternsKata.sln
  verbosity: minimal
+
+test_script:
+- OpenCover.Console.exe -register:user -target:"vstest.console.exe" -targetargs:""C:\projects\designpatternskata\src\DesignPatternsKataTests\bin\Release\DesignPatternsKataTests.dll" /InIsolation /logger:Appveyor" -filter:"-[*Tests*]*" -output:".\designpatternskata_coverage.xml" -excludebyattribute:*.ExcludeFromCodeCoverage* -returntargetcode
