@@ -46,5 +46,9 @@ test_script:
 artifacts:
   - path: 'coverage.xml'
 
+after_test:
+- pip install codecov 
+- codecov -X gcov -f %APPVEYOR_BUILD_FOLDER%\coverage.xml
+
 cache:
 - packages -> **\packages.config      # preserve "packages" directory in the root of build folder but will reset it if packages.config is modified
