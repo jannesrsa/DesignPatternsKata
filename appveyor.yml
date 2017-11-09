@@ -31,7 +31,7 @@ test_script:
 - >-
     OpenCover.Console.exe
     -target:"vstest.console.exe"
-    -targetargs:""C:\projects\designpatternskata\src\DesignPatternsKataTests\bin\Release\DesignPatternsKataTests.dll" /InIsolation /logger:Appveyor"
+    -targetargs:""C:\projects\DesignPatternsKataTests.dll" /InIsolation /logger:Appveyor"
     -filter:"+[*]* -[*.Tests]*"
     -output:"%APPVEYOR_BUILD_FOLDER%\coverage.xml"
     -excludebyattribute:*.ExcludeFromCodeCoverage*
