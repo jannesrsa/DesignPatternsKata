@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Command\AddNumbersCommand.cs" />
-    <Compile Include="Command\AddTextCommand.cs" />
-    <Compile Include="Command\BaseCommand.cs" />
-    <Compile Include="Command\OpenSwitchCommand.cs" />
-    <Compile Include="Command\Light.cs" />
-    <Compile Include="Command\Switch.cs" />
-    <Compile Include="Command\CloseSwitchCommand.cs" />
-    <Compile Include="Command\Controller.cs" />
-    <Compile Include="Command\IAppCommand.cs" />
-    <Compile Include="Command\ICommand.cs" />
-    <Compile Include="Command\ISwitchable.cs" />
+    <Compile Include="Command\Channel9\AddNumbersCommand.cs" />
+    <Compile Include="Command\Channel9\AddTextCommand.cs" />
+    <Compile Include="Command\Channel9\BaseCommand.cs" />
+    <Compile Include="Command\Wikipedia\OpenSwitchCommand.cs" />
+    <Compile Include="Command\Wikipedia\Light.cs" />
+    <Compile Include="Command\Wikipedia\Switch.cs" />
+    <Compile Include="Command\Wikipedia\CloseSwitchCommand.cs" />
+    <Compile Include="Command\Channel9\Controller.cs" />
+    <Compile Include="Command\Channel9\IAppCommand.cs" />
+    <Compile Include="Command\Wikipedia\ICommand.cs" />
+    <Compile Include="Command\Wikipedia\ISwitchable.cs" />
     <Compile Include="Memento\ChangeCustomerCommand.cs" />
     <Compile Include="Memento\Customer.cs" />
     <Compile Include="Memento\MementoForCustomerEntity.cs" />

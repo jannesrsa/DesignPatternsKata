@@ -1,11 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DesignPatternsKata.Command.Tests
+namespace DesignPatternsKata.Command.Channel9.Tests
 {
     [TestClass]
     public class CommandTests
     {
         [TestMethod]
+        [Description("Command Pattern | ShouldAddNumbersAsText")]
         public void ShouldAddNumbersAsText()
         {
             var controller = new Controller();
@@ -17,6 +18,7 @@ namespace DesignPatternsKata.Command.Tests
         }
 
         [TestMethod]
+        [Description("Command Pattern | ShouldUndoNumbersAsText")]
         public void ShouldUndoNumbersAsText()
         {
             var controller = new Controller();
@@ -29,6 +31,7 @@ namespace DesignPatternsKata.Command.Tests
         }
 
         [TestMethod]
+        [Description("Command Pattern | ShouldAddText")]
         public void ShouldAddText()
         {
             var controller = new Controller();
@@ -41,6 +44,7 @@ namespace DesignPatternsKata.Command.Tests
         }
 
         [TestMethod]
+        [Description("Command Pattern | ShouldUndoText")]
         public void ShouldUndoText()
         {
             var controller = new Controller();

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 
-namespace DesignPatternsKata.Command
+namespace DesignPatternsKata.Command.Channel9
 {
     public abstract class BaseCommand : IAppCommand
     {

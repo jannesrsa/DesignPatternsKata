@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace DesignPatternsKata.Command
+namespace DesignPatternsKata.Command.Channel9
 {
     public class AddTextCommand : BaseCommand
     {

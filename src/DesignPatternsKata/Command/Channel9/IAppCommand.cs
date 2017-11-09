@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace DesignPatternsKata.Command
+namespace DesignPatternsKata.Command.Channel9
 {
     public interface IAppCommand
     {

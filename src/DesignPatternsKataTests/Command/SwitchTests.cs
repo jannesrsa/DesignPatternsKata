@@ -1,17 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DesignPatternsKata.Command;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DesignPatternsKata.Command.Tests
+namespace DesignPatternsKata.Command.Wikipedia.Tests
 {
     [TestClass()]
     public class SwitchTests
     {
         [TestMethod()]
+        [Description("Command Pattern | SwitchTest")]
         public void SwitchTest()
         {
             // Arrange
@@ -27,6 +22,7 @@ namespace DesignPatternsKata.Command.Tests
         }
 
         [TestMethod()]
+        [Description("Command Pattern | CloseTest")]
         public void CloseTest()
         {
             // Arrange
@@ -43,6 +39,7 @@ namespace DesignPatternsKata.Command.Tests
         }
 
         [TestMethod()]
+        [Description("Command Pattern | OpenTest")]
         public void OpenTest()
         {
             // Arrange

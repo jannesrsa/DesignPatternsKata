@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace DesignPatternsKata.Command
+namespace DesignPatternsKata.Command.Channel9
 {
     public class Controller
     {

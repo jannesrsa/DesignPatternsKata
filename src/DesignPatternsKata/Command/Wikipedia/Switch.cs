@@ -1,4 +1,4 @@
-﻿namespace DesignPatternsKata.Command
+﻿namespace DesignPatternsKata.Command.Wikipedia
 {
     /// <summary>
     /// Invoker

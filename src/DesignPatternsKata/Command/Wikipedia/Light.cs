@@ -1,6 +1,7 @@
-﻿namespace DesignPatternsKata.Command
+﻿namespace DesignPatternsKata.Command.Wikipedia
 {
     /* The Receiver class */
+
     public class Light : ISwitchable
     {
         public bool On { get; private set; }

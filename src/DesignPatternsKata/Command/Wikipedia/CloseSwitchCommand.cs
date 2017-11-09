@@ -1,6 +1,7 @@
-﻿namespace DesignPatternsKata.Command
+﻿namespace DesignPatternsKata.Command.Wikipedia
 {
     /* The Command for turning on the device - ConcreteCommand #1 */
+
     public class CloseSwitchCommand : ICommand
     {
         private ISwitchable _switchable;
