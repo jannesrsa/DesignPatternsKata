@@ -1,7 +1,6 @@
-﻿using DesignPatternsKata.Memento;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DesignPatternsKataTests.Memento.Tests
+namespace DesignPatternsKata.Memento.Tests
 {
     [TestClass]
     public class MementoUnitTests
