@@ -33,7 +33,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>c:\projects\</OutputPath>
+    <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -64,7 +64,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DesignPatternsKata.csproj">
+    <ProjectReference Include="..\DesignPatternsKata\DesignPatternsKata.csproj">
       <Project>{2667ef84-bc97-4e45-8ce4-c1228c406005}</Project>
       <Name>DesignPatternsKata</Name>
     </ProjectReference>

@@ -28,17 +28,20 @@ build:
 
 test_script:
 - >- 
+    foreach($file in Get-ChildItem –Path C:\projects -Include *.pdb -Recurse)
+    {
+        Echo $file.FullName
+        Copy-Item $file.FullName -Destination C:\projects\
+    }
 - >-
     OpenCover.Console.exe
     -register:user
     -target:"vstest.console.exe"
-    -targetargs:""C:\projects\DesignPatternsKataTests.dll" /InIsolation /logger:Appveyor"
+    -targetargs:""C:\projects\designpatternskata\src\DesignPatternsKataTests\bin\Release\DesignPatternsKataTests.dll" /InIsolation /logger:Appveyor"
     -filter:"+[*]* -[*.Tests]*"
     -output:"%APPVEYOR_BUILD_FOLDER%\coverage.xml"
     -excludebyattribute:*.ExcludeFromCodeCoverage*
     -returntargetcode
-
-#- OpenCover.Console.exe -register:user -target:"vstest.console.exe" -targetargs:""C:\projects\designpatternskata\src\DesignPatternsKataTests\bin\Release\DesignPatternsKataTests.dll" /InIsolation /logger:Appveyor" -excludebyattribute:*.ExcludeFromCodeCoverage* -returntargetcode
 
 artifacts:
   - path: 'coverage.xml'
