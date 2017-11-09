@@ -27,4 +27,20 @@ build:
  verbosity: minimal
 
 test_script:
-- OpenCover.Console.exe -register:user -target:"vstest.console.exe" -targetargs:""C:\projects\designpatternskata\src\DesignPatternsKataTests\bin\Release\DesignPatternsKataTests.dll" /InIsolation /logger:Appveyor" -filter:"-[*Tests*]*" -output:".\designpatternskata_coverage.xml" -excludebyattribute:*.ExcludeFromCodeCoverage* -returntargetcode
+- >-
+    OpenCover.Console.exe
+    -target:"dotnet.exe"
+    -targetargs:"test DesignPatternsKata.sln -c %CONFIGURATION% --no-build"
+    -filter:"+[*]* -[*.Tests]*"
+    -output:"%APPVEYOR_BUILD_FOLDER%\coverage.xml"
+    -excludebyattribute:*.ExcludeFromCodeCoverage*
+    -oldStyle
+    -register:user
+    -mergebyhash
+    -hideskipped:File
+
+artifacts:
+  - path: 'coverage.xml'
+
+cache:
+- packages -> **\packages.config      # preserve "packages" directory in the root of build folder but will reset it if packages.config is modified
