@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral\Pizza.cs" />
     <Compile Include="Command\Channel9\AddNumbersCommand.cs" />
     <Compile Include="Command\Channel9\AddTextCommand.cs" />
     <Compile Include="Command\Channel9\BaseCommand.cs" />
@@ -66,6 +67,14 @@
     <Compile Include="Strategy\Wikipedia\Minus.cs" />
     <Compile Include="Strategy\Wikipedia\Plus.cs" />
     <Compile Include="Strategy\Wikipedia\CalculateClient.cs" />
+    <Compile Include="Behavioral\BaseOrder.cs" />
+    <Compile Include="TemplateMethod\Channel9\BasePizzaStore.cs" />
+    <Compile Include="Behavioral\IOrder.cs" />
+    <Compile Include="Behavioral\IPizza.cs" />
+    <Compile Include="TemplateMethod\Channel9\NewYorkStylePizzaStore.cs" />
+    <Compile Include="Behavioral\WebOrder.cs" />
+    <Compile Include="Behavioral\PhoneOrder.cs" />
+    <Compile Include="TemplateMethod\Channel9\Pizza.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
