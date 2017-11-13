@@ -1,31 +1,32 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace DesignPatternsKata.Observer.Channel9
 {
     public class SportsAggregator : ISubject
     {
-        private readonly List<ICustomObserver> _observers = new List<ICustomObserver>();
-
-        public IEnumerable<ICustomObserver> Observers { get { return _observers; } }
+        public List<ICustomObserver> Observers { get; } = new List<ICustomObserver>();
 
         public void AddGameResult(GameResult gameResult)
         {
-            foreach (var observer in _observers)
-            {
-                observer.AddGameResult(gameResult);
-            }
+            NotifyObservers(gameResult);
+        }
+
+        public void NotifyObservers(GameResult gameResult)
+        {
+            Parallel.ForEach(Observers, i => i.AddGameResult(gameResult));
         }
 
         public void RegisterObserver(ICustomObserver observer)
         {
-            _observers.Add(observer);
+            Observers.Add(observer);
         }
 
         public void UnregisterObserver(ICustomObserver observer)
         {
-            if (_observers.Contains(observer))
+            if (Observers.Contains(observer))
             {
-                _observers.Remove(observer);
+                Observers.Remove(observer);
             }
         }
     }
