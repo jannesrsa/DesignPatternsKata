@@ -69,6 +69,7 @@
     <Compile Include="Command\Wikipedia\EngineTests.cs" />
     <Compile Include="Memento\MementoUnitTests.cs" />
     <Compile Include="Observer\Channel9\SportsAggregatorTests.cs" />
+    <Compile Include="Observer\RegionNotifyPropertyChangedTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategy\Wikipedia\CalculateClientTests.cs" />
     <Compile Include="TemplateMethod\Channel9\BasePizzaStoreTests.cs" />
