@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DesignPatternsKata.Observer.Channel9.Tests
@@ -32,6 +33,12 @@ namespace DesignPatternsKata.Observer.Channel9.Tests
             Assert.AreEqual(1, observer2.Results.Count);
             Assert.AreSame(gameResult, observer1.Results[0]);
             Assert.AreSame(gameResult, observer2.Results[0]);
+
+            // Action
+            subject.UnregisterObserver(observer1);
+            subject.UnregisterObserver(observer2);
+
+            Assert.IsFalse(subject.Observers.Any());
         }
     }
 }
