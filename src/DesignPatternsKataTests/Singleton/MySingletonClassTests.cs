@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DesignPatternsKata.Singleton.Tests
 {
@@ -26,18 +24,6 @@ namespace DesignPatternsKata.Singleton.Tests
 
             // Assert
             Assert.AreEqual(first.SomeValue, second.SomeValue);
-        }
-
-        [TestMethod()]
-        public void MySingletonClass_SomeValue_Threading()
-        {
-            var taskList = new List<Task>();
-            for (int i = 0; i < 100; i++)
-            {
-                taskList.Add(Task.Run(() => MySingletonClass_SomeValue()));
-            }
-
-            Task.WaitAll(taskList.ToArray());
         }
     }
 }
