@@ -71,6 +71,7 @@
     <Compile Include="Observer\Channel9\SportsAggregatorTests.cs" />
     <Compile Include="Observer\RegionNotifyPropertyChangedTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Singleton\MySingletonClassTests.cs" />
     <Compile Include="Strategy\Wikipedia\CalculateClientTests.cs" />
     <Compile Include="TemplateMethod\Channel9\BasePizzaStoreTests.cs" />
     <Compile Include="TemplateMethod\Channel9\NewYorkStylePizzaStoreTests.cs" />
