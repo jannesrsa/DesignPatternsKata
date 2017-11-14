@@ -69,6 +69,9 @@
     <Compile Include="Command\Wikipedia\HelperMethods.cs" />
     <Compile Include="Command\Wikipedia\SwitchTests.cs" />
     <Compile Include="Command\Wikipedia\EngineTests.cs" />
+    <Compile Include="Decorator\Channel9\ArmoredCarTests.cs" />
+    <Compile Include="Decorator\Channel9\AttackCarTests.cs" />
+    <Compile Include="Decorator\Channel9\BaseCarTests.cs" />
     <Compile Include="Facade\Channel9\BetterAPITests.cs" />
     <Compile Include="Memento\MementoUnitTests.cs" />
     <Compile Include="Observer\Channel9\SportsAggregatorTests.cs" />

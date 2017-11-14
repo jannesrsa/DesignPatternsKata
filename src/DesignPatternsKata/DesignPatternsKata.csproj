@@ -66,6 +66,10 @@
     <Compile Include="Command\Channel9\IAppCommand.cs" />
     <Compile Include="Command\Wikipedia\ICommand.cs" />
     <Compile Include="Command\Wikipedia\ISwitchable.cs" />
+    <Compile Include="Decorator\Channel9\ArmoredCar.cs" />
+    <Compile Include="Decorator\Channel9\AttackCar.cs" />
+    <Compile Include="Decorator\Channel9\BaseCar.cs" />
+    <Compile Include="Decorator\Channel9\ICar.cs" />
     <Compile Include="Facade\Channel9\BetterAPI.cs" />
     <Compile Include="Facade\Channel9\Confussing.cs" />
     <Compile Include="Facade\Channel9\IBetterAPI.cs" />
