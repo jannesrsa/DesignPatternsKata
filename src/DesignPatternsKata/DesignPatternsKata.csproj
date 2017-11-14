@@ -66,6 +66,12 @@
     <Compile Include="Command\Channel9\IAppCommand.cs" />
     <Compile Include="Command\Wikipedia\ICommand.cs" />
     <Compile Include="Command\Wikipedia\ISwitchable.cs" />
+    <Compile Include="Facade\Channel9\BetterAPI.cs" />
+    <Compile Include="Facade\Channel9\Confussing.cs" />
+    <Compile Include="Facade\Channel9\IBetterAPI.cs" />
+    <Compile Include="Facade\Channel9\IConfusing.cs" />
+    <Compile Include="Facade\Channel9\IOverdone.cs" />
+    <Compile Include="Facade\Channel9\Overdone.cs" />
     <Compile Include="Memento\ChangeCustomerCommand.cs" />
     <Compile Include="Memento\Customer.cs" />
     <Compile Include="Memento\MementoForCustomerEntity.cs" />

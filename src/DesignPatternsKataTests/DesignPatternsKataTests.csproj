@@ -69,6 +69,7 @@
     <Compile Include="Command\Wikipedia\HelperMethods.cs" />
     <Compile Include="Command\Wikipedia\SwitchTests.cs" />
     <Compile Include="Command\Wikipedia\EngineTests.cs" />
+    <Compile Include="Facade\Channel9\BetterAPITests.cs" />
     <Compile Include="Memento\MementoUnitTests.cs" />
     <Compile Include="Observer\Channel9\SportsAggregatorTests.cs" />
     <Compile Include="Observer\RegionNotifyPropertyChangedTests.cs" />
