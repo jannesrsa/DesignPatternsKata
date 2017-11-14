@@ -63,6 +63,8 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="Adapter\Channel9\FlyingSquirrelAdapterTests.cs" />
+    <Compile Include="Adapter\Channel9\MooseAdapterTests.cs" />
     <Compile Include="Command\Channel9\CommandUnitTests.cs" />
     <Compile Include="Command\Wikipedia\HelperMethods.cs" />
     <Compile Include="Command\Wikipedia\SwitchTests.cs" />

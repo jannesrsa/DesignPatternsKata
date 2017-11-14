@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter\Channel9\FlyingSquirrel.cs" />
+    <Compile Include="Adapter\Channel9\FlyingSquirrelAdapter.cs" />
+    <Compile Include="Adapter\Channel9\ICharacter.cs" />
+    <Compile Include="Adapter\Channel9\IFlyingSquirrel.cs" />
+    <Compile Include="Adapter\Channel9\IMoose.cs" />
+    <Compile Include="Adapter\Channel9\Moose.cs" />
+    <Compile Include="Adapter\Channel9\MooseAdapter.cs" />
     <Compile Include="Behavioral\Pizza.cs" />
     <Compile Include="Command\Channel9\AddNumbersCommand.cs" />
     <Compile Include="Command\Channel9\AddTextCommand.cs" />
